@@ -92,6 +92,10 @@ There are two ways a skill gets activated:
 
 > **Tip:** if a skill is not getting auto-picked, the fix is almost always a more specific `description` — say clearly *when* to use it.
 
+> A skill's content will also go stale or show loopholes as you use it. That is normal —
+> see [Part 7: the feedback loop](../07-feedback-loop/README.md) for how to keep skills
+> sharp over time, using the agent itself to update them.
+
 ---
 
 ## Cheat-sheet

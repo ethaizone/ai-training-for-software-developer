@@ -96,4 +96,4 @@ Every MCP server you enable adds its tool list to what the model sees at the sta
 
 ---
 
-[← Part 5: Agent skills](../05-skills/README.md) · [↑ Index](../README.md)
+[← Part 5: Agent skills](../05-skills/README.md) · [↑ Index](../README.md) · [→ Part 7: The feedback loop](../07-feedback-loop/README.md)

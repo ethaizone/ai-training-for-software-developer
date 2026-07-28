@@ -78,6 +78,10 @@ Less than you think. A few sharp rules beat a long document nobody (including th
 - Write **do/don't** pairs. The model follows "never edit migrations; create a new one" better than a paragraph explaining migration philosophy.
 - Keep it short enough that the whole file is useful context, not noise that eats your [context window](../glossary.md#context-window) for no gain.
 
+> `AGENTS.md` is not done when you write it. As you use it, you will find gaps and
+> loopholes. That is normal — see [Part 7: the feedback loop](../07-feedback-loop/README.md)
+> for how to keep it sharp over time, using the agent itself to update it.
+
 ---
 
 ## Cheat-sheet
