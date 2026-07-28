@@ -97,4 +97,4 @@ A few weeks of this and your instructions become much better — because every g
 
 ---
 
-[← Part 6: MCP — when to use it](../06-mcp/README.md) · [↑ Index](../README.md)
+[← Part 6: MCP — when to use it](../06-mcp/README.md) · [↑ Index](../README.md) · [→ Part 8: pi.dev: a leaner harness](../08-pi/README.md)

@@ -28,8 +28,11 @@ flowchart LR
     E --> F["6. MCP<br/>external data"]
     D -.-> G["7. Feedback loop<br/>keep instructions sharp"]
     E -.-> G
+    G -.-> H["8. pi.dev<br/>a leaner harness"]
+    H --> I["9. Extending pi<br/>extensions & hooks"]
     style A fill:#e8f0fe,color:#1a1a1a
     style G fill:#e6f4ea,color:#1a1a1a
+    style H fill:#f3e8fd,color:#1a1a1a
 ```
 
 ## Contents
@@ -43,6 +46,8 @@ flowchart LR
 | 5 | [Agent skills](05-skills/README.md) | Package knowledge, workflows, and tools the agent can pick on its own. |
 | 6 | [MCP — when to use it](06-mcp/README.md) | Plug in third-party data/tools. Why a skill is usually the better choice. |
 | 7 | [The feedback loop](07-feedback-loop/README.md) | Keep AGENTS.md and skills sharp over time, using the agent to update them. |
+| 8 | [pi.dev: a leaner harness](08-pi/README.md) | A second harness with no permission system — and the two practices that keep it safe. |
+| 9 | [Extending pi](09-extending-pi/README.md) | Extensions and hooks as pi's core design; packages that add MCP, sub-agents, and remote access. |
 
 ## Repo layout
 
@@ -57,6 +62,8 @@ glossary.md          ← AI terms, defined once
 05-skills/           ← Part 5
 06-mcp/              ← Part 6
 07-feedback-loop/    ← Part 7
+08-pi/               ← Part 8
+09-extending-pi/     ← Part 9
 sessions/            ← logs of real sessions (learning artifacts)
 ```
 

@@ -17,6 +17,11 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
   5. Agent skills — packaging knowledge, workflows, and tools.
   6. MCP — using external data/tools. (Stance: creating MCP is hard; an agent
      skill is often the better choice. Teach this trade-off honestly.)
+  7. The feedback loop — keeping AGENTS.md and skills sharp over time.
+  8. pi.dev — a leaner alternative harness (the secondary example). No permission
+     system by design; teach the two safety practices (context hygiene, guardrails).
+  9. Extending pi — extensions and hooks as pi's core design; the community
+     packages that add MCP, sub-agents, and remote access.
 
 ## Documentation rules
 

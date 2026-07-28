@@ -29,6 +29,12 @@ Model Context Protocol. A standard way to connect external data and tools (datab
 ## Skill
 A reusable packet of instructions (knowledge, a workflow, or a tool) the harness can load on demand. Costs almost nothing until used. [→ Part 5](05-skills/README.md)
 
+## Extension
+A code module (in pi, a TypeScript file) that adds features to a harness: custom tools, commands, UI, and event handlers. A skill is instructions; an extension is running code. [→ Part 9](09-extending-pi/README.md)
+
+## Hook
+A named point in a harness where your code runs and can intercept behavior. In pi, the `tool_call` hook can block a tool before it runs, and `tool_result` can change what comes back. Hooks are how extensions like guardrails work. [→ Part 9](09-extending-pi/README.md)
+
 ## Hallucination
 When the model states something false with full confidence. Caused by its probabilistic nature, not a database lookup. You constrain it with rules, tests, and verification.
 
