@@ -37,7 +37,7 @@ flowchart LR
     Done -- yes --> Reply["Replies & stops"]
     Result -. "dangerous step" .-> Ask["Asks you first<br/>(permission system)"]
     Ask --> Tool
-    style Ask fill:#fff3cd
+    style Ask fill:#fff3cd,color:#1a1a1a
 ```
 
 The loop is the whole difference from chat. In chat you paste a question and get one answer. In agentic mode the model *drives* — it reads your code, runs your build, reads the error, fixes the file, runs it again. You move from "typing every step" to "approving steps".

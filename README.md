@@ -28,8 +28,8 @@ flowchart LR
     E --> F["6. MCP<br/>external data"]
     D -.-> G["7. Feedback loop<br/>keep instructions sharp"]
     E -.-> G
-    style A fill:#e8f0fe
-    style G fill:#e6f4ea
+    style A fill:#e8f0fe,color:#1a1a1a
+    style G fill:#e6f4ea,color:#1a1a1a
 ```
 
 ## Contents

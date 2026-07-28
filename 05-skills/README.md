@@ -22,8 +22,8 @@ flowchart LR
         F["full SKILL.md content"]
     end
     N -->|"model decides it's relevant"| F
-    style N fill:#e6f4ea
-    style F fill:#fff3cd
+    style N fill:#e6f4ea,color:#1a1a1a
+    style F fill:#fff3cd,color:#1a1a1a
 ```
 
 ### Why this beats loading everything

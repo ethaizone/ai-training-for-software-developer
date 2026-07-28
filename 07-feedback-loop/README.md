@@ -28,8 +28,8 @@ flowchart TD
     E --> A["Ask the agent to update<br/>AGENTS.md / the skill"]
     A --> N["Updated instruction file"]
     N --> U
-    style A fill:#e8f0fe
-    style N fill:#e6f4ea
+    style A fill:#e8f0fe,color:#1a1a1a
+    style N fill:#e6f4ea,color:#1a1a1a
 ```
 
 Four steps, repeated:

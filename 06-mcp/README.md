@@ -29,8 +29,8 @@ flowchart TD
     D -- "No, it's our own knowledge<br/>or workflow" --> S["Use a skill<br/>(Part 5)"]
     MCP --> Cost1["Cost: tool list loaded<br/>into context at the start"]
     S --> Cost2["Cost: only a description,<br/>loaded when used"]
-    style S fill:#e6f4ea
-    style MCP fill:#fff3cd
+    style S fill:#e6f4ea,color:#1a1a1a
+    style MCP fill:#fff3cd,color:#1a1a1a
 ```
 
 **Simple guide:**

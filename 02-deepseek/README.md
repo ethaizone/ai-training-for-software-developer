@@ -74,8 +74,8 @@ flowchart TD
     A2["You write prompt in English"] --> B2["Model pulls from<br/>English training data"]
     B2 --> C2["Largest, highest-quality<br/>knowledge pool for code"]
     C2 --> D2["Strong answer"]
-    style D fill:#fce8e6
-    style D2 fill:#e6f4ea
+    style D fill:#fce8e6,color:#1a1a1a
+    style D2 fill:#e6f4ea,color:#1a1a1a
 ```
 
 **Why English wins for code:** the vast majority of code, documentation, and benchmarks (including SWE-bench) are in English. The model's strongest, most-reinforced coding knowledge lives in its English data. When you prompt in Thai, the model retrieves from a much smaller, weaker Thai-language pool for technical concepts — so the answer gets worse, even though the model is capable.

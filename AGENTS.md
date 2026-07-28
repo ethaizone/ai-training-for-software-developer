@@ -54,7 +54,8 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
   with simple, punctuation-free names. Link to `glossary.md#slug` on first use.
 - Mermaid only for diagrams (no ASCII art). Before finishing, check Mermaid
   syntax: node IDs must be alphanumeric (no `?`), labels with special chars
-  must be quoted.
+  must be quoted. If you set a node `fill`, also set a dark text `color`
+  (e.g. `fill:#e8f0fe,color:#1a1a1a`) so it stays readable in dark mode.
 - No private information anywhere in the guide — no names, handles, real
   project or repo names, real file paths, or API keys. When borrowing from a
   real config, keep the pattern, drop the identity.

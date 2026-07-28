@@ -24,7 +24,7 @@ flowchart TD
     G["Global rules<br/>~/.config/opencode/AGENTS.md"] --> C["Combined into the<br/>system prompt every session"]
     R["Repo rules<br/>./AGENTS.md (found by walking up<br/>from your current folder)"] --> C
     C --> M["Model sees: global rules<br/>+ repo rules + your message"]
-    style C fill:#e8f0fe
+    style C fill:#e8f0fe,color:#1a1a1a
 ```
 
 | Scope | File path | Use it for |
