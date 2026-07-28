@@ -43,6 +43,22 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
   context-bound) in one line, then how you/harness constrain it.
 - End each module with a scannable cheat-sheet: do/don't + one snippet.
 
+### Quality bar
+- Verify every tool/model fact against its primary source before writing. AI
+  tooling changes fast; never rely on memory for prices, model names, config
+  syntax, or behavior. Cite the source (a doc URL is enough).
+- No idioms, metaphors, or figurative speech. The reader is a Thai native —
+  phrases like "rule of thumb", "price of admission", "the loop is the point"
+  will confuse. Say it plainly.
+- Glossary anchors must resolve. Build glossary entries as real `## Headings`
+  with simple, punctuation-free names. Link to `glossary.md#slug` on first use.
+- Mermaid only for diagrams (no ASCII art). Before finishing, check Mermaid
+  syntax: node IDs must be alphanumeric (no `?`), labels with special chars
+  must be quoted.
+- No private information anywhere in the guide — no names, handles, real
+  project or repo names, real file paths, or API keys. When borrowing from a
+  real config, keep the pattern, drop the identity.
+
 ### Consistency & freshness
 - One glossary (glossary.md). Define each AI term once (context window, tokens,
   tools/function-calling, MCP, agentic, system prompt, hallucination, RAG, …) and
@@ -53,6 +69,19 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
 ### Links
 - Reference via links — never duplicate content across files.
 - Recheck every link's liveness before calling any work done.
+
+## Workflow rules
+
+### Review before done
+- Every new or changed part must pass an independent review (a subagent or a
+  human reviewer) against this AGENTS.md before it is considered done. The
+  author does not self-approve.
+- The reviewer checks: accuracy vs primary sources, idioms, redundancy, rule
+  violations, dead links, broken Mermaid. Fix every finding before moving on.
+
+### After every edit
+- Re-read the lines around an edit before continuing. Edits can silently delete
+  or shift adjacent content (e.g. swallowing a footer or a code fence).
 
 ## Session logging
 - This repo is itself a learning artifact. Log every session held here.
