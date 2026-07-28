@@ -2,7 +2,7 @@
 
 > **Goal:** understand what an *AI harness* is, why it is a different thing from the
 > *model*, and why working through one changes how you develop.
-> **As of 2026-07.** AI tooling changes fast. opencode docs (English): <https://opencode.ai/en/docs/>
+> opencode docs (English): <https://opencode.ai/en/docs/>
 
 ## What is an AI harness?
 

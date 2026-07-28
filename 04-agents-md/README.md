@@ -2,7 +2,7 @@
 
 > **Goal:** use `AGENTS.md` to make the model follow *your* solution — and keep that
 > control even when you swap models.
-> **As of 2026-07.** Behavior verified against the [opencode rules doc](https://opencode.ai/en/docs/rules/).
+> Behavior verified against the [opencode rules doc](https://opencode.ai/en/docs/rules/).
 
 ## The goal of AGENTS.md
 

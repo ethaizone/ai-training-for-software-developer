@@ -3,7 +3,7 @@
 > **Goal:** know what [MCP](../glossary.md#mcp) is for, when to use it, and why
 > a [skill](../glossary.md#skill) is usually the better choice when you just need to
 > teach the agent something.
-> **As of 2026-07.** Config syntax verified against the [opencode MCP doc](https://opencode.ai/en/docs/mcp-servers/).
+> Config syntax verified against the [opencode MCP doc](https://opencode.ai/en/docs/mcp-servers/).
 
 ## What MCP is for
 

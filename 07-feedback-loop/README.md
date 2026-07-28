@@ -3,7 +3,6 @@
 > **Goal:** treat `AGENTS.md` and your [skills](../glossary.md#skill) as living files
 > that get better over time — and use the agent itself to update them.
 > **Applies to:** [Part 4 (AGENTS.md)](../04-agents-md/README.md) and [Part 5 (skills)](../05-skills/README.md).
-> **As of 2026-07** (opencode + DeepSeek).
 
 ## The core idea
 

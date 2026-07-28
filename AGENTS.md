@@ -63,8 +63,10 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
 - One glossary (glossary.md). Define each AI term once (context window, tokens,
   tools/function-calling, MCP, agentic, system prompt, hallucination, RAG, …) and
   reuse. Link on first use.
-- Date-stamp tool/model-specific advice ("as of YYYY-MM, opencode + DeepSeek").
-  AI tooling rots fast; flag anything likely to age.
+- Put one freshness stamp in the master README only ("Current as of YYYY-MM").
+  Do not repeat it per part. AI tooling rots fast, so the parts that hold rotting
+  facts (prices, model names, config syntax) should say "verify before relying" —
+  but the date lives in one place.
 
 ### Links
 - Reference via links — never duplicate content across files.

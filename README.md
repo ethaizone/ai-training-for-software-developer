@@ -5,7 +5,7 @@ AI-assisted development. You will learn how to drive an **AI harness** so the mo
 follows your solution, instead of the other way around.
 
 > **Stack:** [opencode](https://opencode.ai/) (the harness) + DeepSeek (a cheap, capable LLM).
-> **As of:** 2026-07. AI tooling changes fast — see [Provenance & freshness](#) notes in [`AGENTS.md`](AGENTS.md).
+> **Current as of 2026-07.** AI tooling changes fast — prices, model names, and config syntax may have shifted since then. Verify before relying on specifics.
 
 ## Who this is for
 

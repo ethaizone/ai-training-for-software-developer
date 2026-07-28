@@ -2,7 +2,7 @@
 
 > **Goal:** package knowledge, workflows, and tools as **skills** the agent can load
 > on demand — cheaply, and often instead of building an MCP.
-> **As of 2026-07.** Behavior verified against the [opencode skills doc](https://opencode.ai/en/docs/skills/).
+> Behavior verified against the [opencode skills doc](https://opencode.ai/en/docs/skills/).
 
 ## The goal of a skill
 

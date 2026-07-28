@@ -2,7 +2,7 @@
 
 > **Goal:** understand why model choice matters for cost, where DeepSeek sits, and the
 > real reason a "Chinese model" can feel worse — and how to fix it.
-> **As of 2026-07.** Prices and model names change often; treat this as a snapshot.
+> Prices and model names change often — treat this as a snapshot and verify before relying on the numbers.
 
 ## Why cost matters
 
@@ -14,7 +14,7 @@ In an [agentic](../glossary.md#agent) loop the model is called many times per ta
 
 DeepSeek is a Chinese AI lab. Its models are open-weight (you can read the license and run some yourself) and are known for strong coding ability at a very low price. In opencode you point the harness at the DeepSeek API and it behaves like any other model — the [harness does not care which lab made the brain](../01-opencode/README.md#harness-vs-model--do-not-confuse-them).
 
-## The price gap (2026-07 snapshot)
+## The price gap
 
 Per **1 million tokens**, USD. Source: each vendor's official pricing page.
 
