@@ -13,15 +13,18 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
   1. opencode as an AI harness — what it is, install, the loop.
   2. DeepSeek as a cheap LLM — why cost matters, how to configure.
   3. Start coding with opencode — first session, driving the harness day-to-day.
-  4. AGENTS.md as system instruction — making the agent follow your solution.
-  5. Agent skills — packaging knowledge, workflows, and tools.
-  6. MCP — using external data/tools. (Stance: creating MCP is hard; an agent
+  4. The context window — how messages accumulate turn by turn, why a full
+     window causes drift, compacting between tasks, and how AGENTS.md and
+     skills act as pre-loaded snapshots that save searching.
+  5. AGENTS.md as system instruction — making the agent follow your solution.
+  6. Agent skills — packaging knowledge, workflows, and tools.
+  7. MCP — using external data/tools. (Stance: creating MCP is hard; an agent
      skill is often the better choice. Teach this trade-off honestly.)
-  7. The feedback loop — keeping AGENTS.md and skills sharp over time.
-  8. pi.dev — a leaner alternative harness (the secondary example). No permission
+  8. The feedback loop — keeping AGENTS.md and skills sharp over time.
+  9. pi.dev — a leaner alternative harness (the secondary example). No permission
      system by design; teach the two safety practices (context hygiene, guardrails).
-  9. Extending pi — extensions and hooks as pi's core design; the community
-     packages that add MCP, sub-agents, and remote access.
+  10. Extending pi — extensions and hooks as pi's core design; the community
+      packages that add MCP, sub-agents, and remote access.
 
 ## Documentation rules
 

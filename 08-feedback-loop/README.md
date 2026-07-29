@@ -1,12 +1,12 @@
-# Part 7 — The feedback loop: keep your instructions sharp
+# Part 8 — The feedback loop: keep your instructions sharp
 
 > **Goal:** treat `AGENTS.md` and your [skills](../glossary.md#skill) as living files
 > that get better over time — and use the agent itself to update them.
-> **Applies to:** [Part 4 (AGENTS.md)](../04-agents-md/README.md) and [Part 5 (skills)](../05-skills/README.md).
+> **Applies to:** [Part 5 (AGENTS.md)](../05-agents-md/README.md) and [Part 6 (skills)](../06-skills/README.md).
 
 ## The core idea
 
-You wrote your [AGENTS.md](../04-agents-md/README.md) and your skills. They are not
+You wrote your [AGENTS.md](../05-agents-md/README.md) and your skills. They are not
 done. They are **living files** — like code, not like a printed manual.
 
 Why: the model is probabilistic, so even with good instructions it will sometimes do
@@ -97,4 +97,4 @@ A few weeks of this and your instructions become much better — because every g
 
 ---
 
-[← Part 6: MCP — when to use it](../06-mcp/README.md) · [↑ Index](../README.md) · [→ Part 8: pi.dev: a leaner harness](../08-pi/README.md)
+[← Part 7: MCP — when to use it](../07-mcp/README.md) · [↑ Index](../README.md) · [→ Part 9: pi.dev: a leaner harness](../09-pi/README.md)

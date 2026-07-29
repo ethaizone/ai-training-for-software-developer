@@ -12,10 +12,10 @@ The program that wraps an LLM so it can read/write files, run commands, and loop
 An LLM inside a harness, working in a loop toward a goal. "Agentic" means the model decides the next step itself, within limits you set.
 
 ## System prompt
-Hidden instructions that shape every reply before your message is even seen. In opencode, your `AGENTS.md` becomes part of this. [→ Part 4](04-agents-md/README.md)
+Hidden instructions that shape every reply before your message is even seen. In opencode, your `AGENTS.md` becomes part of this. [→ Part 5](05-agents-md/README.md)
 
 ## Context window
-How much text the model can "see" at once (counted in [tokens](#tokens)). More context = more files and history it can hold, but higher cost and slower replies.
+How much text the model can "see" at once (counted in [tokens](#tokens)). More context = more files and history it can hold, but higher cost and slower replies. [→ Part 4](04-context-window/README.md)
 
 ## Tokens
 Roughly a piece of a word. 100 tokens ≈ 75 words. You pay per token.
@@ -24,16 +24,16 @@ Roughly a piece of a word. 100 tokens ≈ 75 words. You pay per token.
 Letting the model trigger real actions (read a file, run a command) instead of only producing text. This is what makes a chat model into an agent.
 
 ## MCP
-Model Context Protocol. A standard way to connect external data and tools (databases, APIs, browsers) to a harness. [→ Part 6](06-mcp/README.md)
+Model Context Protocol. A standard way to connect external data and tools (databases, APIs, browsers) to a harness. [→ Part 7](07-mcp/README.md)
 
 ## Skill
-A reusable packet of instructions (knowledge, a workflow, or a tool) the harness can load on demand. Costs almost nothing until used. [→ Part 5](05-skills/README.md)
+A reusable packet of instructions (knowledge, a workflow, or a tool) the harness can load on demand. Costs almost nothing until used. [→ Part 6](06-skills/README.md)
 
 ## Extension
-A code module (in pi, a TypeScript file) that adds features to a harness: custom tools, commands, UI, and event handlers. A skill is instructions; an extension is running code. [→ Part 9](09-extending-pi/README.md)
+A code module (in pi, a TypeScript file) that adds features to a harness: custom tools, commands, UI, and event handlers. A skill is instructions; an extension is running code. [→ Part 10](10-extending-pi/README.md)
 
 ## Hook
-A named point in a harness where your code runs and can intercept behavior. In pi, the `tool_call` hook can block a tool before it runs, and `tool_result` can change what comes back. Hooks are how extensions like guardrails work. [→ Part 9](09-extending-pi/README.md)
+A named point in a harness where your code runs and can intercept behavior. In pi, the `tool_call` hook can block a tool before it runs, and `tool_result` can change what comes back. Hooks are how extensions like guardrails work. [→ Part 10](10-extending-pi/README.md)
 
 ## Hallucination
 When the model states something false with full confidence. Caused by its probabilistic nature, not a database lookup. You constrain it with rules, tests, and verification.

@@ -1,4 +1,4 @@
-# Part 6 — MCP, when to use it
+# Part 7 — MCP, when to use it
 
 > **Goal:** know what [MCP](../glossary.md#mcp) is for, when to use it, and why
 > a [skill](../glossary.md#skill) is usually the better choice when you just need to
@@ -26,7 +26,7 @@ Building your *own* MCP server is hard. You have to write a server, handle the p
 flowchart TD
     Q["I want the agent to<br/>know / do something"] --> D{"Is there a ready-made<br/>third-party tool?"}
     D -- "Yes (docs, browser, DB…)" --> MCP["Use an MCP server<br/>(someone else built it)"]
-    D -- "No, it's our own knowledge<br/>or workflow" --> S["Use a skill<br/>(Part 5)"]
+    D -- "No, it's our own knowledge<br/>or workflow" --> S["Use a skill<br/>(Part 6)"]
     MCP --> Cost1["Cost: tool list loaded<br/>into context at the start"]
     S --> Cost2["Cost: only a description,<br/>loaded when used"]
     style S fill:#e6f4ea,color:#1a1a1a
@@ -36,7 +36,7 @@ flowchart TD
 **Simple guide:**
 
 - **Use an MCP server** when a third party already built the tool you need (live docs, a browser, a database, an external API). You get real capability without writing the hard part.
-- **Use a skill** when the thing you want to teach is *your own* knowledge, workflow, or a simple CLI call. A skill is just a markdown file (see [Part 5](../05-skills/README.md)) — no server, no protocol, no process to run.
+- **Use a skill** when the thing you want to teach is *your own* knowledge, workflow, or a simple CLI call. A skill is just a markdown file (see [Part 6](../06-skills/README.md)) — no server, no protocol, no process to run.
 
 ## How to add an MCP server in opencode
 
@@ -76,7 +76,7 @@ Set `"enabled": false` to turn a server off temporarily without removing it from
 
 ## Keep it lean
 
-Every MCP server you enable adds its tool list to what the model sees at the start. Add only the servers you actually use on a project. If a server's tools are only sometimes relevant, ask whether a skill (Part 5) could cover the common case instead.
+Every MCP server you enable adds its tool list to what the model sees at the start. Add only the servers you actually use on a project. If a server's tools are only sometimes relevant, ask whether a skill (Part 6) could cover the common case instead.
 
 ---
 
@@ -96,4 +96,4 @@ Every MCP server you enable adds its tool list to what the model sees at the sta
 
 ---
 
-[← Part 5: Agent skills](../05-skills/README.md) · [↑ Index](../README.md) · [→ Part 7: The feedback loop](../07-feedback-loop/README.md)
+[← Part 6: Agent skills](../06-skills/README.md) · [↑ Index](../README.md) · [→ Part 8: The feedback loop](../08-feedback-loop/README.md)

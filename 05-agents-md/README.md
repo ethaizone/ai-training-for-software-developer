@@ -1,4 +1,4 @@
-# Part 4 — AGENTS.md as system instruction
+# Part 5 — AGENTS.md as system instruction
 
 > **Goal:** use `AGENTS.md` to make the model follow *your* solution — and keep that
 > control even when you swap models.
@@ -79,7 +79,7 @@ Less than you think. A few sharp rules beat a long document nobody (including th
 - Keep it short enough that the whole file is useful context, not noise that eats your [context window](../glossary.md#context-window) for no gain.
 
 > `AGENTS.md` is not done when you write it. As you use it, you will find gaps and
-> loopholes. That is normal — see [Part 7: the feedback loop](../07-feedback-loop/README.md)
+> loopholes. That is normal — see [Part 8: the feedback loop](../08-feedback-loop/README.md)
 > for how to keep it sharp over time, using the agent itself to update it.
 
 ---
@@ -100,4 +100,4 @@ Less than you think. A few sharp rules beat a long document nobody (including th
 
 ---
 
-[← Part 3: Start coding with opencode](../03-start-coding/README.md) · [↑ Index](../README.md) · [→ Part 5: Agent skills](../05-skills/README.md)
+[← Part 4: The context window](../04-context-window/README.md) · [↑ Index](../README.md) · [→ Part 6: Agent skills](../06-skills/README.md)

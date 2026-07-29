@@ -158,4 +158,4 @@ The first session is the best teacher. You will quickly see which permissions yo
 
 ---
 
-[← Part 2: DeepSeek as a cheap LLM](../02-deepseek/README.md) · [↑ Index](../README.md) · [→ Part 4: AGENTS.md as system instruction](../04-agents-md/README.md)
+[← Part 2: DeepSeek as a cheap LLM](../02-deepseek/README.md) · [↑ Index](../README.md) · [→ Part 4: The context window](../04-context-window/README.md)

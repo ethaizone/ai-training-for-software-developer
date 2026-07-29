@@ -1,4 +1,4 @@
-# Part 8 — pi.dev: a leaner harness
+# Part 9 — pi.dev: a leaner harness
 
 > **Goal:** meet **pi** as a second harness, see how its trade-offs differ from
 > opencode, and learn the two practices that keep a harness with *no permission
@@ -25,9 +25,9 @@ side-by-side. Both are harnesses; the differences are in what they ship by defau
 | **Permission system** | Built in. `allow` / `ask` / `deny` rules in config. | **None.** Every tool call runs without asking. |
 | **MCP** | Built in. Add servers in config. | Not built in. Add via an extension. |
 | **Sub-agents** | Built in. | Not built in. Add via an extension. |
-| **Extensions / hooks** | Plugins and hooks exist. | The *core* design. Granular event system (see [Part 9](../09-extending-pi/README.md)). |
-| **Skills** | Yes ([Part 5](../05-skills/README.md)). | Yes — same Agent Skills standard. |
-| **`AGENTS.md`** | Loaded per [Part 4](../04-agents-md/README.md). | Loaded too. Your rules transfer. |
+| **Extensions / hooks** | Plugins and hooks exist. | The *core* design. Granular event system (see [Part 10](../10-extending-pi/README.md)). |
+| **Skills** | Yes ([Part 6](../06-skills/README.md)). | Yes — same Agent Skills standard. |
+| **`AGENTS.md`** | Loaded per [Part 5](../05-agents-md/README.md). | Loaded too. Your rules transfer. |
 | **Model choice** | Bring your own. | Bring your own. DeepSeek works in both. |
 
 > **Mechanism in one line:** opencode's safety is *config* (you write rules); pi's is
@@ -38,8 +38,8 @@ side-by-side. Both are harnesses; the differences are in what they ship by defau
 Good news: most of this guide carries over to pi unchanged.
 
 - **The harness-vs-model split** ([Part 1](../01-opencode/README.md#harness-vs-model--do-not-confuse-them)) is identical.
-- **`AGENTS.md`** ([Part 4](../04-agents-md/README.md)) — pi loads `~/.pi/agent/AGENTS.md`, walks up from your folder, and combines them. Same idea, same file.
-- **Skills** ([Part 5](../05-skills/README.md)) — pi uses the same skill folders and format.
+- **`AGENTS.md`** ([Part 5](../05-agents-md/README.md)) — pi loads `~/.pi/agent/AGENTS.md`, walks up from your folder, and combines them. Same idea, same file.
+- **Skills** ([Part 6](../06-skills/README.md)) — pi uses the same skill folders and format.
 - **DeepSeek for the loop** ([Part 2](../02-deepseek/README.md)) — pi supports the DeepSeek API, so your cheap-model-for-the-loop habit still applies.
 
 ## The trade-off: no permission system
@@ -55,7 +55,7 @@ flowchart TD
     O --> Ask["Not in allow list?<br/>Asks you first"]
     Q -->|"pi"| P["Runs it immediately<br/>(no built-in gate)"]
     P --> Guard{"Guardrail extension<br/>installed?"}
-    Guard -- "yes" --> Block["Hook can block it<br/>(Part 9)"]
+    Guard -- "yes" --> Block["Hook can block it<br/>(Part 10)"]
     Guard -- "no" --> Run["Runs as your user"]
     style Ask fill:#e6f4ea,color:#1a1a1a
     style Run fill:#fce8e6,color:#1a1a1a
@@ -69,24 +69,16 @@ daily habits that make plain local use safer.
 
 ## Practice 1: keep the context window lean
 
-> **Mechanism in one line:** when the [context window](../glossary.md#context-window)
-> is nearly full, the model pays less attention to the instructions already in it — so it is
-> more likely to drift and call the wrong tool.
-
-A practical limit from real use: once the window is about **90% full**, mistakes and
-unexpected tool calls rise. The fix is to treat context like a resource you manage, not
-a limitless space.
-
-pi helps you do this:
+The general mechanism — why a nearly full [context window](../glossary.md#context-window)
+makes the model drift, and why you compact between tasks — is in [Part 4](../04-context-window/README.md). It applies to pi exactly the same way. What is specific to pi is how you watch it:
 
 - **Watch the footer.** pi shows live **context usage** in the footer (along with token
   and cost totals). Glance at it the way you glance at disk space.
-- **Compact before it gets full.** pi has **compaction** — it summarizes older messages
-  to free space. It runs automatically when context overflows, and you can trigger it
-  any time with `/compact`. Compacting earlier (around 80–85%) keeps the model following your rules.
+- **Compact before it gets full.** Run `/compact` yourself around 80–85% — do not wait
+  for the overflow trigger, which fires too late (the same lesson as opencode's auto-compact in Part 4).
 
 If you want to see context from your own code, an extension can read it too — see
-[Part 9](../09-extending-pi/README.md).
+[Part 10](../10-extending-pi/README.md).
 
 ## Practice 2: add guardrails
 
@@ -95,7 +87,7 @@ Since pi has no built-in gate, add one as an extension. The recommended one is
 Prevents dangerous operations, protects env files, gates destructive commands."
 
 It is a pi extension that uses the `tool_call` hook (explained in
-[Part 9](../09-extending-pi/README.md)) to block destructive commands, stop writes to
+[Part 10](../10-extending-pi/README.md)) to block destructive commands, stop writes to
 `.env` and similar files, and keep paths inside your workspace. Install it with pi's
 package command:
 
@@ -126,4 +118,4 @@ pi install git:github.com/aliou/pi-guardrails
 
 ---
 
-[← Part 7: The feedback loop](../07-feedback-loop/README.md) · [↑ Index](../README.md) · [→ Part 9: Extending pi](../09-extending-pi/README.md)
+[← Part 8: The feedback loop](../08-feedback-loop/README.md) · [↑ Index](../README.md) · [→ Part 10: Extending pi](../10-extending-pi/README.md)

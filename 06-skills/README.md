@@ -1,4 +1,4 @@
-# Part 5 — Agent skills
+# Part 6 — Agent skills
 
 > **Goal:** package knowledge, workflows, and tools as **skills** the agent can load
 > on demand — cheaply, and often instead of building an MCP.
@@ -30,7 +30,7 @@ flowchart LR
 
 If you put all your instructions directly in `AGENTS.md`, they are loaded on *every* turn — using context even when not relevant. Skills solve this: ten skills cost you only ten short descriptions until one is actually needed.
 
-This is also why **a skill is often a better choice than an [MCP](../glossary.md#mcp) server** (see [Part 6](../06-mcp/README.md)). An MCP server typically exposes its full tool list to the model up front, which uses more context. A skill costs only its name and description until used.
+This is also why **a skill is often a better choice than an [MCP](../glossary.md#mcp) server** (see [Part 7](../07-mcp/README.md)). An MCP server typically exposes its full tool list to the model up front, which uses more context. A skill costs only its name and description until used.
 
 ## The three kinds of skill
 
@@ -93,7 +93,7 @@ There are two ways a skill gets activated:
 > **Tip:** if a skill is not getting auto-picked, the fix is almost always a more specific `description` — say clearly *when* to use it.
 
 > A skill's content will also go stale or show loopholes as you use it. That is normal —
-> see [Part 7: the feedback loop](../07-feedback-loop/README.md) for how to keep skills
+> see [Part 8: the feedback loop](../08-feedback-loop/README.md) for how to keep skills
 > sharp over time, using the agent itself to update them.
 
 ---
@@ -114,4 +114,4 @@ There are two ways a skill gets activated:
 
 ---
 
-[← Part 4: AGENTS.md as system instruction](../04-agents-md/README.md) · [↑ Index](../README.md) · [→ Part 6: MCP — when to use it](../06-mcp/README.md)
+[← Part 5: AGENTS.md as system instruction](../05-agents-md/README.md) · [↑ Index](../README.md) · [→ Part 7: MCP — when to use it](../07-mcp/README.md)

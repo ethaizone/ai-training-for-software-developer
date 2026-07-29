@@ -71,7 +71,7 @@ The shift is who does the mechanical typing and searching. You still own archite
 ### What does NOT change
 
 - **You own the design.** The model cannot decide your architecture. It will propose one, often reasonable, sometimes wrong. You judge.
-- **You own review.** "The model wrote it" is not "it is correct." Read the diff like a peer wrote it. (See [Part 4](../04-agents-md/README.md) for making this cheaper.)
+- **You own review.** "The model wrote it" is not "it is correct." Read the diff like a peer wrote it. (See [Part 5](../05-agents-md/README.md) for making this cheaper.)
 - **You own correctness.** The model is probabilistic — it can sound completely sure and still be wrong (a [hallucination](../glossary.md#hallucination)). Tests and your eyes on the diff are the safety net, not the model's confidence.
 
 ## Why a harness instead of a chat window

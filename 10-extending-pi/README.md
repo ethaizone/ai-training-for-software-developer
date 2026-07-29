@@ -1,4 +1,4 @@
-# Part 9 — Extending pi: extensions and the ecosystem
+# Part 10 — Extending pi: extensions and the ecosystem
 
 > **Goal:** understand why **extensions** are pi's defining feature, see how **hooks**
 > let you rebuild anything pi lacks, and learn the community packages that fill pi's
@@ -7,7 +7,7 @@
 
 ## pi ships little, extends far
 
-In [Part 8](../08-pi/README.md) you saw what pi leaves out: a permission system, native
+In [Part 9](../09-pi/README.md) you saw what pi leaves out: a permission system, native
 MCP, native sub-agents. None of that is missing by accident. pi's design is a small core
 plus a deep extension system. What other harnesses bake in, you add to pi — as code.
 
@@ -34,7 +34,7 @@ A **[hook](../glossary.md#hook)** is a named point where your code runs and can 
 what happens. pi exposes a fine-grained lifecycle. The two that matter most for control:
 
 - **`tool_call`** — fires *before* a tool runs, and **can block it**. This is exactly how
-  [pi-guardrails](https://github.com/aliou/pi-guardrails) (Part 8) stops dangerous commands.
+  [pi-guardrails](https://github.com/aliou/pi-guardrails) (Part 9) stops dangerous commands.
 - **`tool_result`** — fires *after* a tool runs, and **can modify the result**.
 
 ```mermaid
@@ -72,7 +72,7 @@ extensions, plus tools for remote work. Install any of them with `pi install`:
 
 | Package | What it adds | Link |
 |---|---|---|
-| **pi-mcp-adapter** | [MCP](../glossary.md#mcp) support. Token-efficient: it proxies many MCP tools through one compact tool, so the full tool list does not bloat your context (ties to [Practice 1](../08-pi/README.md#practice-1-keep-the-context-window-lean)). | <https://github.com/nicobailon/pi-mcp-adapter> |
+| **pi-mcp-adapter** | [MCP](../glossary.md#mcp) support. Token-efficient: it proxies many MCP tools through one compact tool, so the full tool list does not bloat your context (ties to [Practice 1](../09-pi/README.md#practice-1-keep-the-context-window-lean)). | <https://github.com/nicobailon/pi-mcp-adapter> |
 | **pi-subagents** | Delegate work to focused child agents — code review, scouting a codebase, parallel audits, saved workflows. | <https://github.com/nicobailon/pi-subagents> |
 | **pi-telegram** | Turn a private Telegram DM into a remote surface for pi. Start work at your desk, then keep driving it from your phone when you step away. | <https://github.com/llblab/pi-telegram> |
 
@@ -106,4 +106,4 @@ pi install git:github.com/llblab/pi-telegram
 
 ---
 
-[← Part 8: pi.dev: a leaner harness](../08-pi/README.md) · [↑ Index](../README.md)
+[← Part 9: pi.dev: a leaner harness](../09-pi/README.md) · [↑ Index](../README.md)
