@@ -44,6 +44,12 @@ A short note of what was decided and why, produced by grilling open decisions, s
 ## Fresh-context review
 A code review done by a subagent spawned with an empty context window, so it judges the work without the bias of the session that built it. [→ Part 12](12-workflows-fresh-context-review/README.md)
 
+## Workspace
+The unit of one parallel task: a working directory plus its own running app and services plus one AI session pointed at it. Open one workspace per task you want to run at the same time. [→ Part 13](13-workflows-parallel-workspaces/README.md)
+
+## Git worktree
+A git feature that adds a second working directory linked to the same repository, each on its own branch — a cheap way to have several branches checked out at once without a full clone. [→ Part 13](13-workflows-parallel-workspaces/README.md)
+
 ## Hallucination
 When the model states something false with full confidence. Caused by its probabilistic nature, not a database lookup. You constrain it with rules, tests, and verification.
 

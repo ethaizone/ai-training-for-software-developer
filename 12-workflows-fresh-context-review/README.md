@@ -1,7 +1,7 @@
 # Part 12 — Fresh-context review: check your work with a fresh window
 
 > **Goal:** after building, spawn a subagent with a fresh context window to review the work against the plan and the diff — and loop until it finds nothing.
-> **Part of:** the workflows group (Parts 11 and 12). Pairs with [Part 11 (plan and grill)](../11-workflows-plan-and-grill/README.md): it reviews what Part 11 planned.
+> **Part of:** the workflows group (Parts 11–13). Pairs with [Part 11 (plan and grill)](../11-workflows-plan-and-grill/README.md): it reviews what Part 11 planned.
 
 ## Why your own session is a bad reviewer
 
@@ -76,4 +76,4 @@ This is not theoretical. The rules file for this guide ([`AGENTS.md`](../AGENTS.
 
 ---
 
-[← Part 11: Plan and grill](../11-workflows-plan-and-grill/README.md) · [↑ Index](../README.md)
+[← Part 11: Plan and grill](../11-workflows-plan-and-grill/README.md) · [↑ Index](../README.md) · [→ Part 13: Parallel workspaces](../13-workflows-parallel-workspaces/README.md)

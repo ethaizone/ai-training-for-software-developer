@@ -1,9 +1,9 @@
 # Part 11 — Plan and grill: decide before you build
 
 > **Goal:** write the plan to a file before you drive the agent, then let the agent grill the open decisions one at a time — so it builds the right thing the first time.
-> **Part of:** the workflows group (Parts 11 and 12). Builds on [Part 4 (context window)](../04-context-window/README.md) and [Part 6 (skills)](../06-skills/README.md).
+> **Part of:** the workflows group (Parts 11–13). Builds on [Part 4 (context window)](../04-context-window/README.md) and [Part 6 (skills)](../06-skills/README.md).
 
-Parts 1 to 10 covered what you work with — the harness, the model, your rules, your skills. Parts 11 and 12 are **workflows**: disciplined ways to use them on a real task.
+Parts 1 to 10 covered what you work with — the harness, the model, your rules, your skills. Parts 11 to 13 are **workflows**: disciplined ways to use them on a real task.
 
 ## Why plan in a file, not in the chat
 

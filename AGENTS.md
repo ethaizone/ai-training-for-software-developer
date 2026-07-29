@@ -29,6 +29,8 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
       then grill every open decision into a recorded decision.
   12. Workflows: fresh-context review — spawn a clean subagent to review the
       work against the plan and the diff, looping until it finds nothing.
+  13. Workflows: parallel workspaces — give each parallel task its own
+      directory and running stack, isolated by compose project name and ports.
 
 ## Documentation rules
 

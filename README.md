@@ -33,6 +33,7 @@ flowchart LR
     H --> I["10. Extending pi<br/>extensions & hooks"]
     I --> J["11. Workflows<br/>plan & grill"]
     J --> K["12. Workflows<br/>fresh-context review"]
+    K --> L["13. Workflows<br/>parallel workspaces"]
     style A fill:#e8f0fe,color:#1a1a1a
     style G fill:#e6f4ea,color:#1a1a1a
     style H fill:#f3e8fd,color:#1a1a1a
@@ -54,6 +55,7 @@ flowchart LR
 | 10 | [Extending pi](10-extending-pi/README.md) | Extensions and hooks as pi's core design; packages that add MCP, sub-agents, and remote access. |
 | 11 | [Workflows: plan and grill](11-workflows-plan-and-grill/README.md) | Write the plan to a file before you build, then grill every open decision to a record. |
 | 12 | [Workflows: fresh-context review](12-workflows-fresh-context-review/README.md) | Spawn a fresh-context reviewer to check the work against the plan and the diff; loop until it reports nothing. |
+| 13 | [Workflows: parallel workspaces](13-workflows-parallel-workspaces/README.md) | Give each parallel task its own directory, running stack, and AI session; isolate stacks with compose project names and ports. |
 
 ## Repo layout
 
@@ -73,6 +75,7 @@ glossary.md          ← AI terms, defined once
 10-extending-pi/     ← Part 10
 11-workflows-plan-and-grill/ ← Part 11
 12-workflows-fresh-context-review/ ← Part 12
+13-workflows-parallel-workspaces/ ← Part 13
 sessions/            ← logs of real sessions (learning artifacts)
 ```
 
