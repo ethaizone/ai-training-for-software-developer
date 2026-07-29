@@ -31,6 +31,8 @@ flowchart LR
     E -.-> G
     G -.-> H["9. pi.dev<br/>a leaner harness"]
     H --> I["10. Extending pi<br/>extensions & hooks"]
+    I --> J["11. Workflows<br/>plan & grill"]
+    J --> K["12. Workflows<br/>fresh-context review"]
     style A fill:#e8f0fe,color:#1a1a1a
     style G fill:#e6f4ea,color:#1a1a1a
     style H fill:#f3e8fd,color:#1a1a1a
@@ -50,6 +52,8 @@ flowchart LR
 | 8 | [The feedback loop](08-feedback-loop/README.md) | Keep AGENTS.md and skills sharp over time, using the agent to update them. |
 | 9 | [pi.dev: a leaner harness](09-pi/README.md) | A second harness with no permission system — and the two practices that keep it safe. |
 | 10 | [Extending pi](10-extending-pi/README.md) | Extensions and hooks as pi's core design; packages that add MCP, sub-agents, and remote access. |
+| 11 | [Workflows: plan and grill](11-workflows-plan-and-grill/README.md) | Write the plan to a file before you build, then grill every open decision to a record. |
+| 12 | [Workflows: fresh-context review](12-workflows-fresh-context-review/README.md) | Spawn a fresh-context reviewer to check the work against the plan and the diff; loop until it reports nothing. |
 
 ## Repo layout
 
@@ -67,6 +71,8 @@ glossary.md          ← AI terms, defined once
 08-feedback-loop/    ← Part 8
 09-pi/               ← Part 9
 10-extending-pi/     ← Part 10
+11-workflows-plan-and-grill/ ← Part 11
+12-workflows-fresh-context-review/ ← Part 12
 sessions/            ← logs of real sessions (learning artifacts)
 ```
 

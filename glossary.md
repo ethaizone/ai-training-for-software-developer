@@ -35,6 +35,15 @@ A code module (in pi, a TypeScript file) that adds features to a harness: custom
 ## Hook
 A named point in a harness where your code runs and can intercept behavior. In pi, the `tool_call` hook can block a tool before it runs, and `tool_result` can change what comes back. Hooks are how extensions like guardrails work. [→ Part 10](10-extending-pi/README.md)
 
+## Plan file
+A short markdown file (often `PLAN.md`) that captures the goal, scope, ordered steps, and open decisions for one task, so the plan lives outside the chat. [→ Part 11](11-workflows-plan-and-grill/README.md)
+
+## Decision record
+A short note of what was decided and why, produced by grilling open decisions, so a settled choice can be reloaded later. [→ Part 11](11-workflows-plan-and-grill/README.md)
+
+## Fresh-context review
+A code review done by a subagent spawned with an empty context window, so it judges the work without the bias of the session that built it. [→ Part 12](12-workflows-fresh-context-review/README.md)
+
 ## Hallucination
 When the model states something false with full confidence. Caused by its probabilistic nature, not a database lookup. You constrain it with rules, tests, and verification.
 

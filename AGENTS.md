@@ -25,6 +25,10 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
      system by design; teach the two safety practices (context hygiene, guardrails).
   10. Extending pi — extensions and hooks as pi's core design; the community
       packages that add MCP, sub-agents, and remote access.
+  11. Workflows: plan and grill — write the plan to a file before you build,
+      then grill every open decision into a recorded decision.
+  12. Workflows: fresh-context review — spawn a clean subagent to review the
+      work against the plan and the diff, looping until it finds nothing.
 
 ## Documentation rules
 
@@ -66,7 +70,10 @@ opencode (AI harness) + DeepSeek (cheap, capable LLM). Secondary example: pi.dev
   (e.g. `fill:#e8f0fe,color:#1a1a1a`) so it stays readable in dark mode.
 - No private information anywhere in the guide — no names, handles, real
   project or repo names, real file paths, or API keys. When borrowing from a
-  real config, keep the pattern, drop the identity.
+  real config, keep the pattern, drop the identity. Public third-party
+  resources (official docs, open-source skills and packages) may be linked
+  as citations when they help the reader — this rule protects the author's
+  own identity and configs, not external references.
 
 ### Consistency & freshness
 - One glossary (glossary.md). Define each AI term once (context window, tokens,

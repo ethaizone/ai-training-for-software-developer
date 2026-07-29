@@ -106,4 +106,4 @@ pi install git:github.com/llblab/pi-telegram
 
 ---
 
-[← Part 9: pi.dev: a leaner harness](../09-pi/README.md) · [↑ Index](../README.md)
+[← Part 9: pi.dev: a leaner harness](../09-pi/README.md) · [↑ Index](../README.md) · [→ Part 11: Workflows: plan and grill](../11-workflows-plan-and-grill/README.md)
